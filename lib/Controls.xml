@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<controls>
+	<version>0.000.2</version>
+	<Button color="1">
+		<constants desc="Button Label" value="value"></constants>
+		<info desc="Prevent text wrapping" value="-Wrap"></info>
+		<info desc="Creates a push button with a heavy black border." value="0x1"></info>
+		<info desc="Left-aligns the text." value="0x100"></info>
+		<info desc="Right-aligns the text." value="0x200"></info>
+		<info desc="Wraps the text to multiple lines if the text is too long to fit on a single line in the control's available width." value="0x2000"></info>
+		<info desc="Places text at the top of the control's available height." value="0x400"></info>
+		<info desc="Places the text at the bottom of the control's available height." value="0x800"></info>
+		<info desc="Specifies that the button is two-dimensional." value="0x8000"></info>
+		<info desc="Vertically centers text in the control's available height." value="0xC00"></info>
+		<info desc="Make this button the default selection" value="Default"></info></Button>
+	<Checkbox>
+		<constants desc="Checkbox Label" value="value"></constants>
+		<info desc="Makes a checkbox or radio button look and act like a push button." value="0x1000"></info>
+		<info desc="Right-aligns the text." value="0x200"></info>
+		<info desc="Wraps the text to multiple lines if the text is too long to fit on a single line in the control's available width." value="0x2000"></info>
+		<info desc="Places text at the top of the control's available height." value="0x400"></info>
+		<info desc="Places the text at the bottom of the control's available height." value="0x800"></info>
+		<info desc="Specifies that the button is two-dimensional." value="0x8000"></info>
+		<info desc="Vertically centers text in the control's available height." value="0xC00"></info>
+		<info desc="Greyed out Check" value="Check3"></info>
+	</Checkbox>
+	<ComboBox h="1" color="1">
+		<constants desc="ComboBox List" value="value"></constants>
+		<info desc="Specifies that the combo box will be exactly the size specified by the application when it created the combo box. Usually, Windows CE sizes a combo box so that it does not display partial items." value="0x400"></info>
+		<info desc="Converts text typed in the combo box edit control from the Windows CE character set to the OEM character set and then back to the Windows CE set. This style is most useful for combo boxes that contain file names. It applies only to combo boxes created with the CBS_DROPDOWN style." value="0x80"></info>
+		<info desc="Shows a disabled vertical scroll bar in the list box when the box does not contain enough items to scroll. Without this style, the scroll bar is hidden when the list box does not contain enough items." value="0x800"></info>
+		<info desc="Automatically scrolls the text in an edit control to the right when the user types a character at the end of the line. If this style is not set, only text that fits within the rectangular boundary is enabled." value="Limit"></info>
+		<info desc="Converts to lowercase any uppercase characters that are typed into the edit control of a combo box." value="Lowercase"></info>
+		<info desc="(ComboBox only). Displays the list box at all times. The current selection in the list box is displayed in the edit control." value="Simple"></info>
+		<info desc="Sorts the items in the drop-list alphabetically." value="Sort"></info>
+		<info desc="Converts to uppercase any lowercase characters that are typed into the edit control of a ComboBox." value="Uppercase"></info></ComboBox>
+	<DateTime color="1">
+		<constants desc="DateTime Value" value="value"></constants>
+		<constants desc="Set the range of dates eg(20050101-20120101)" value="Range"></constants>
+		<info desc="Displays the date in short format." value="0x0"></info>
+		<info desc="Provides an up-down control to the right of the control to modify date-time values." value="0x1"></info>
+		<info desc="Displays a checkbox inside the control that users can uncheck to make the control have no date/time selected" value="0x2"></info>
+		<info desc="The calendar will drop down on the right side of the control instead of the left." value="0x20"></info>
+		<info desc="Format option 'LongDate'." value="0x4"></info>
+		<info desc="Format option 'Time'." value="0x9"></info>
+		<info desc="Format option blank/omitted." value="0xC"></info>
+		<info desc="Causes the drop-down calendar to drop down on the right side of the control instead of the left" value="Right"></info></DateTime>
+	<DropDownList color="1">
+		<constants desc="DropDownList List" value="value"></constants>
+		<info desc="Specifies that the combo box will be exactly the size specified by the application when it created the combo box. Usually, Windows CE sizes a combo box so that it does not display partial items." value="0x400"></info>
+		<info desc="Converts text typed in the combo box edit control from the Windows CE character set to the OEM character set and then back to the Windows CE set. This style is most useful for combo boxes that contain file names. It applies only to combo boxes created with the CBS_DROPDOWN style." value="0x80"></info>
+		<info desc="Shows a disabled vertical scroll bar in the list box when the box does not contain enough items to scroll. Without this style, the scroll bar is hidden when the list box does not contain enough items." value="0x800"></info>
+		<info desc="Automatically scrolls the text in an edit control to the right when the user types a character at the end of the line. If this style is not set, only text that fits within the rectangular boundary is enabled." value="Limit"></info>
+		<info desc="Converts to lowercase any uppercase characters that are typed into the edit control of a combo box." value="Lowercase"></info>
+		<info desc="(ComboBox only). Displays the list box at all times. The current selection in the list box is displayed in the edit control." value="Simple"></info>
+		<info desc="Sorts the items in the drop-list alphabetically." value="Sort"></info>
+		<info desc="Converts to uppercase any lowercase characters that are typed into the edit control of a ComboBox." value="Uppercase"></info></DropDownList>
+	<Edit>
+		<constants desc="Edit Pre-Entered Value" value="value"></constants>
+		<constants desc="Rows" value="R" type="number" refresh="1"></constants>
+		<constants desc="Set tab stops inside a multi-line edit control (numbers only)" value="T"></constants>
+		<info desc="Centers text in a multiline edit control." value="1"></info>
+		<info desc="Right-aligns text in a multiline edit control." value="2"></info>
+		<info desc="Scrolls text up one page when the user presses the ENTER key on the last line." value="64"></info>
+		<info desc="Negates the default behavior for an edit control." value="256"></info>
+		<info desc="This style is most useful for edit controls that contain file names." value="1024"></info>
+		<info desc="Remove border" value="-E0x200"></info>
+		<info desc="Prevents the user's press of Control-A from selecting all text in the edit control" value="-WantCtrlA"></info>
+		<info desc="Prevents a multi-line edit control from capturing the Enter keystroke" value="-WantReturn"></info>
+		<info desc="Turns off word-wrapping in a multi-line edit control (re-load required to see effect)" value="-Wrap"></info>
+		<info desc="Restricts the user's input to the visible width of the edit field" value="Limit"></info>
+		<info desc="The characters typed by the user are automatically converted to lowercase" value="Lowercase"></info>
+		<info desc="Makes it possible to have more than one line of text (Can not be combined with password)" value="Multi"></info>
+		<info desc="Prevents the user from typing anything other than digits into the field" value="Number"></info>
+		<info desc="Hides the user's input (such as for password entry)" value="Password"></info>
+		<info desc="Prevents the user from changing the control's contents" value="ReadOnly"></info>
+		<info desc="The characters typed by the user are automatically converted to uppercase" value="Uppercase"></info>
+		<info desc="Causes a tab keystroke to produce a tab character rather than navigating to the next control" value="WantTab"></info>
+	</Edit>
+	<GroupBox>
+		<constants desc="GroupBox Label" value="value"></constants>
+		<constants desc="Rows" value="R" type="number"></constants>
+		<info desc="Right-aligns the text." value="0x200"></info>
+		<info desc="Wraps the text to multiple lines if the text is too long to fit on a single line in the control's available width." value="0x2000"></info>
+		<info desc="Places text at the top of the control's available height." value="0x400"></info>
+		<info desc="Places the text at the bottom of the control's available height." value="0x800"></info>
+		<info desc="Allows for a multi-line heading" value="Wrap"></info>
+	</GroupBox>
+	<Hotkey color="1"></Hotkey>
+	<ListBox>
+		<constants desc="ListBox List" value="value"></constants>
+		<info desc="Specifies that the list box will be exactly the size specified by the application when it created the list box." value="0x100"></info>
+		<info desc="Shows a disabled vertical scroll bar for the list box when the box does not contain enough items to scroll." value="0x1000"></info>
+		<info desc="A simplified version of multi-select in which control-click and shift-click are not necessary because normal left clicks serve to extend the selection or de-select a selected item." value="0x8"></info>
+		<info desc="Enables a ListBox to recognize and expand tab characters when drawing its strings. The default tab positions are 32 dialog box units. A dialog box unit is equal to one-fourth of the current dialog box base-width unit." value="0x80"></info>
+		<info desc="Alternate Submit" value="AltSubmit"></info>
+		<info desc="Allows more than one item to be selected simultaneously via shift-click and control-click" value="Multi"></info>
+		<info desc="Prevents items from being visibly highlighted when they are selected (but Gui Submit will still store the selected item)" value="ReadOnly"></info>
+		<info desc="Automatically sorts the contents of the list alphabetically" value="Sort"></info>
+	</ListBox>
+	<ListView>
+		<constants desc="ListView Headings" value="value"></constants>
+		<constants desc="Rows" value="R" type="number" refresh="1"></constants>
+		<info desc="To omit the special top row that contains column titles" value="-Hdr"></info>
+		<info desc="Prevents the user from selecting more than one row at a time" value="-Multi"></info>
+		<info desc="Allow editing of the text in the first column of each row" value="-ReadOnly"></info>
+		<info desc="Prevents an F2 keystroke from editing the currently focused row" value="-WantF2"></info>
+		<info desc="Notifies the script for more types of ListView events than normal" value="AltSubmit"></info>
+		<info desc="Provides a checkbox at the left side of each row" value="Checked"></info>
+		<info desc="Provides horizontal and vertical lines to visually indicate the boundaries between rows and columns" value="Grid"></info>
+		<info desc="Turns off the automatic sorting that occurs when the user clicks a column header" value="NoSort"></info>
+		<info desc="Prevents the header from being clickable" value="NoSortHdr"></info>
+		<info desc="The control is kept alphabetically sorted in ascending" value="Sort"></info>
+		<info desc="The control is kept alphabetically sorted in descending order" value="SortDesc"></info>
+		<style desc="+Report. Specifies report view." value="0x1"></style>
+		<style desc="Icons are automatically kept arranged in icon and small icon view." value="0x100"></style>
+		<style desc="This style specifies a virtual list-view control (not directly supported by AutoHotkey)." value="0x1000"></style>
+		<style desc="+IconSmall. Specifies small-icon view." value="0x2"></style>
+		<style desc="Scrolling is disabled. All items must be within the client area. This style is not compatible with the LVS_LIST or LVS_REPORT styles." value="0x2000"></style>
+		<style desc="+List. Specifies list view." value="0x3"></style>
+		<style desc="The image list will not be deleted when the control is destroyed. This style enables the use of the same image lists with multiple list-view controls." value="0x40"></style>
+		<style desc="The owner window can paint items in report view in response to WM_DRAWITEM messages (not directly supported by AutoHotkey)." value="0x400"></style>
+		<style desc="The selection, if any, is always shown, even if the control does not have keyboard focus." value="0x8"></style>
+		<style desc="Item text is displayed on a single line in icon view. By default, item text may wrap in icon view." value="0x80"></style>
+		<style desc="Items are left-aligned in icon and small icon view." value="0x800"></style>
+	</ListView>
+	<MonthCal color="1">
+		<constants desc="MonthCal Format" value="value"></constants>
+		<constants desc="Set the range of dates eg(20050101-20120101)" value="Range"></constants>
+		<info desc="Display week numbers (1-52) to the left of each row of days" value="4"></info>
+		<info desc="Prevent the circling of today's date within the control" value="8"></info>
+		<info desc="Prevent the display of today's date at the bottom of the control" value="16"></info>
+		<info desc="Multi-select. Allows the user to shift-click or click-drag to select a range of adjacent dates" value="Multi"></info></MonthCal>
+	<Picture font="1" color="1">
+		<constants desc="Image Path" value="value"></constants>
+		<info desc="Centers the bitmap in the control. If the bitmap is too large, it will be clipped. For text controls If the control contains a single line of text, the text is centered vertically within the available height of the control" value="0x200"></info>
+		<info desc="[Windows XP or later] Adjusts the bitmap to fit the size of the control." value="0x40"></info>
+		<info desc="Force picture to the background" value="0x4000000"></info></Picture>
+	<Progress g="1">
+		<constants desc="Progress Value" value="value"></constants>
+		<constants desc="Background Color" value="Background"></constants>
+		<constants desc="Set the range to be something other than 0 to 100 (eg, -4-45)" value="Range"></constants>
+		<info desc="Displays a length of segments rather than a smooth continuous bar" value="-Smooth"></info>
+		<info desc="[Requires Windows XP or later] This style is typically used to indicate an ongoing operation whose completion time is unknown." value="0x8"></info>
+		<info desc="Makes the bar rise or fall vertically rather than move along horizontally (Requires a variable to work properly)" value="Vertical"></info></Progress>
+	<Radio>
+		<constants desc="Radio Label" value="value"></constants>
+		<info desc="Makes a checkbox or radio button look and act like a push button." value="0x1000"></info>
+		<info desc="Right-aligns the text." value="0x200"></info>
+		<info desc="Wraps the text to multiple lines if the text is too long to fit on a single line in the control's available width." value="0x2000"></info>
+		<info desc="Places text at the top of the control's available height." value="0x400"></info>
+		<info desc="Places the text at the bottom of the control's available height." value="0x800"></info>
+		<info desc="Specifies that the button is two-dimensional." value="0x8000"></info>
+		<info desc="Vertically centers text in the control's available height." value="0xC00"></info>
+		<info desc="Have this radio checked by default" value="Checked"></info>
+		<info desc="Start a new group" value="Group"></info>
+	</Radio>
+	<Slider color="1">
+		<constants desc="Slider Start Value" value="value"></constants>
+		<constants desc="Set the range to be something other than 0 to 100" value="Range"></constants>
+		<info desc="The control has a tick mark for each increment in its range of values. Use +/-TickInterval to have more flexibility." value="0x1"></info>
+		<info desc="+/-Thick. Allows the thumb's size to be changed." value="0x40"></info>
+		<info desc="The control does not display the moveable bar." value="0x80"></info>
+		<info desc="The thumb (the bar moved by the user) will be blunt on both ends rather than pointed at one end" value="Center"></info>
+		<info desc="Reverses the control so that the lower value is considered to be on the right/bottom rather than the left/top" value="Invert"></info>
+		<info desc="The thumb (the bar moved by the user) will point to the top rather than the bottom" value="Left"></info>
+		<info desc="Omit tickmarks alongside the track" value="NoTicks"></info>
+		<info desc="Creates a tooltip that reports the numeric position of the slider as the user is dragging it" value="ToolTip"></info>
+		<info desc="Makes the control slide up and down rather than left and right" value="Vertical"></info></Slider>
+	<Tab>
+		<constants desc="Tab List" value="value"></constants>
+		<constants desc="Rows" value="R" type="number" refresh="1"></constants>
+		<info desc="Override the window's custom background color and uses the system's default Tab control color" value="-Background"></info>
+		<info desc="Prevent the tabs from taking up more than a single row" value="-Wrap"></info>
+		<info desc="Unneeded tabs scroll to the opposite side of the control when a tab is selected." value="0x1"></info>
+		<info desc="Icons are aligned with the left edge of each fixed-width tab. This style can only be used with the TCS_FIXEDWIDTH style." value="0x10"></info>
+		<info desc="The tab control receives the input focus when clicked." value="0x1000"></info>
+		<info desc="The parent window is responsible for drawing tabs." value="0x2000"></info>
+		<info desc="Multiple tabs can be selected by holding down CTRL when clicking. This style must be used with the TCS_BUTTONS style." value="0x4"></info>
+		<info desc="Items under the pointer are automatically highlighted" value="0x40"></info>
+		<info desc="All tabs are the same width. This style cannot be combined with the TCS_RIGHTJUSTIFY style." value="0x400"></info>
+		<info desc="The tab control has a tooltip control associated with it." value="0x4000"></info>
+		<info desc="Rows of tabs will not be stretched to fill the entire width of the control. This style is the default." value="0x800"></info>
+		<info desc="The tab control does not receive the input focus when clicked." value="0x8000"></info>
+		<info desc="Align tabs to the bottom" value="Bottom"></info>
+		<info desc="Creates a series of buttons at the top of the control rather than a series of tabs" value="Buttons"></info>
+		<info desc="Align tabs left" value="Left"></info>
+		<info desc="Align tabs right" value="Right"></info>
+	</Tab>
+	<Tab2>
+		<constants desc="Tab List" value="value"></constants>
+		<constants desc="Rows" value="R" type="number" refresh="1"></constants>
+		<info desc="Override the window's custom background color and uses the system's default Tab control color" value="-Background"></info>
+		<info desc="Prevent the tabs from taking up more than a single row" value="-Wrap"></info>
+		<info desc="Unneeded tabs scroll to the opposite side of the control when a tab is selected." value="0x1"></info>
+		<info desc="Icons are aligned with the left edge of each fixed-width tab. This style can only be used with the TCS_FIXEDWIDTH style." value="0x10"></info>
+		<info desc="The tab control receives the input focus when clicked." value="0x1000"></info>
+		<info desc="The parent window is responsible for drawing tabs." value="0x2000"></info>
+		<info desc="Multiple tabs can be selected by holding down CTRL when clicking. This style must be used with the TCS_BUTTONS style." value="0x4"></info>
+		<info desc="Items under the pointer are automatically highlighted" value="0x40"></info>
+		<info desc="All tabs are the same width. This style cannot be combined with the TCS_RIGHTJUSTIFY style." value="0x400"></info>
+		<info desc="The tab control has a tooltip control associated with it." value="0x4000"></info>
+		<info desc="Rows of tabs will not be stretched to fill the entire width of the control. This style is the default." value="0x800"></info>
+		<info desc="The tab control does not receive the input focus when clicked." value="0x8000"></info>
+		<info desc="Align tabs to the bottom" value="Bottom"></info>
+		<info desc="Creates a series of buttons at the top of the control rather than a series of tabs" value="Buttons"></info>
+		<info desc="Align tabs left" value="Left"></info>
+		<info desc="Align tabs right" value="Right"></info>
+	</Tab2>
+	<Text>
+		<constants desc="Text Value" value="value"></constants>
+		<info desc="Prevent text wrapping" value="-Wrap"></info>
+		<info desc="Draws the top and bottom edges of the static control using the EDGE_ETCHED edge style." value="0x10"></info>
+		<info desc="Sends the parent window the STN_CLICKED notification when the user clicks the control." value="0x100"></info>
+		<info desc="Draws a half-sunken border around a static control." value="0x1000"></info>
+		<info desc="Draws the left and right edges of the static control using the EDGE_ETCHED edge style." value="0x11"></info>
+		<info desc="Draws the frame of the static control using the EDGE_ETCHED edge style." value="0x12"></info>
+		<info desc="Specifies a rectangle filled with the current window frame color." value="0x4"></info>
+		<info desc="Specifies a rectangle filled with the current screen background color." value="0x5"></info>
+		<info desc="Specifies a rectangle filled with the current window background color. This color is white in the default color scheme." value="0x6"></info>
+		<info desc="Specifies a box with a frame drawn in the same color as the window frames." value="0x7"></info>
+		<info desc="Specifies a box with a frame drawn with the same color as the screen background (desktop)." value="0x8"></info>
+		<info desc="Prevents interpretation of any ampersand (&amp;) characters in the control's text as accelerator prefix characters." value="0x80"></info>
+		<info desc="Specifies a box with a frame drawn with the same color as the window background. This color is white in the default color scheme." value="0x9"></info>
+		<info desc="Centers the text in the control" value="Center"></info>
+		<info desc="Justifies text to the right of the control" value="Right"></info>
+	</Text>
+	<TreeView>
+		<constants desc="Rows" value="R" type="number" refresh="1"></constants>
+		<info desc="Removes the + and - buttons" value="-0x1"></info>
+		<info desc="Removes the lines to link items" value="-Lines"></info>
+		<info desc="Prevents the tree-view control from sending TVN_BEGINDRAG notification messages." value="0x10"></info>
+		<info desc="Enables full-row selection in the tree view.This style cannot be used in conjunction with the TVS_HASLINES style." value="0x1000"></info>
+		<info desc="Causes a selected item to remain selected when the tree-view control loses focus." value="0x20"></info>
+		<info desc="Enables hot tracking of the mouse in a tree-view control." value="0x200"></info>
+		<info desc="Disables both horizontal and vertical scrolling in the control. The control will not display any scroll bars." value="0x2000"></info>
+		<info desc="Causes text to be displayed from right-to-left (RTL). Usually, windows display text left-to-right (LTR)." value="0x40"></info>
+		<info desc="Causes the item being selected to expand and the item being unselected to collapse upon selection in the tree-view. If the user holds down the CTRL key while selecting an item, the item being unselected will not be collapsed." value="0x400"></info>
+		<info desc="Disables ToolTips." value="0x80"></info>
+		<info desc="Obtains ToolTip information by sending the TVN_GETINFOTIP notification." value="0x800"></info>
+		<info desc="AltSubmit" value="AltSubmit"></info>
+		<info desc="Adds a checkbox to every item(reload required)" value="Checked"></info>
+		<info desc="Disables the horizontal scroll bar" value="HScroll"></info>
+		<info desc="Prevents the user from editing treeview items" value="ReadOnly"></info>
+	</TreeView>
+	<UpDown color="1" font="1" value="1">
+		<constants desc="Range (eg, 0-100)" value="Range"></constants>
+		<info desc="Cause a vertical UpDown to be isolated" value="-16"></info>
+		<info desc="Allows the user to press the Up or Down arrow keys on the keyboard to increase or decrease the UpDown control's position." value="0x20"></info>
+		<info desc="Include 0x80 in Options to omit the thousands separator that is normally present between every three decimal digits in the buddy control" value="0x80"></info>
+		<info desc="Make's the control's buttons point left/right rather than up/down" value="Horz"></info>
+		<info desc="Puts the UpDown on the left side of its buddy rather than the right" value="Left"></info>
+		<info desc="Causes the control to wrap around to the other end of its range when the user attempts to go beyond the minimum or maximum" value="Wrap"></info></UpDown>
+	<constants>
+		<info desc="Control Position X" value="x" type="number"></info>
+		<info desc="Control Position Y" value="y" type="number"></info>
+		<info desc="Control Width" value="w" type="number"></info>
+		<info desc="Control Height" value="h" type="number"></info>
+		<info desc="G-Label" value="g"></info>
+		<info desc="Variable" value="v"></info>
+		<info desc="Font for the control" value="font"></info>
+		<info desc="Color for the control" value="color"></info>
+		<info desc="Additional Options" value="option"></info>
+	</constants>
+</controls>
