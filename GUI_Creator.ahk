@@ -1015,7 +1015,7 @@ FileCheck(){
 	if(conxml.SSN("//version").text!="0.000.2")
 		FileDelete,lib\controls.xml
 	if(!FileExist("lib\controls.xml"))
-		ctrl:=URLDownloadToVar("http://files.maestrith.com/GUI_Creator/Controls.xml"),conxml:=new XML("control","lib\Controls.xml"),conxml.xml.LoadXML(ctrl),conxml.Save(1)
+		ctrl:=URLDownloadToVar("https://raw.githubusercontent.com/maestrith/GUI_Creator/master/lib/Controls.xml"),conxml:=new XML("control","lib\Controls.xml"),conxml.xml.LoadXML(ctrl),conxml.Save(1)
 	if(!FileExist("tile.bmp"))
 		MakeBackground()
 }
