@@ -2,7 +2,10 @@
 global window,conxml,v:=[],settings:=new XML("settings","lib\Settings.xml"),TreeView:=new XML("TreeView")
 FileCheck(),Gui()
 /*
-	Hotkeys are broken when over another control
+	
+	When adding a control from the TV make sure to check to see if it overlaps any other control
+	if it does
+		move it to a blank area then update its position.
 	
 	make a setting for GroupBoxes for dragging contents
 	have it ask if you want things dragged into the tab (and maybe which tab)
