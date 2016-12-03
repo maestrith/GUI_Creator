@@ -748,16 +748,13 @@ Resize(){
 	SetTimer,Redraw,-10
 }
 Update_Program(){
-	m("Coming soon (if not soon ask maestrith nicely)")
-	/*
-		if FileExist("gui.ahk")
-			return m("NO!")
-		FileMove,%A_ScriptName%,deleteme.ahk,1
-		UrlDownloadToFile,http://files.maestrith.com/GUI_Creator/GUI_Creator.ahk,%A_ScriptName%
-		FileDelete,deleteme.ahk
-		Reload
-		ExitApp
-	*/
+	if FileExist("gui.ahk")
+		return m("NO!")
+	FileMove,%A_ScriptName%,deleteme.ahk,1
+	UrlDownloadToFile,https://raw.githubusercontent.com/maestrith/GUI_Creator/master/GUI_Creator.ahk,%A_ScriptName%
+	FileDelete,deleteme.ahk
+	Reload
+	ExitApp
 }
 Dlg_Font(ByRef Style,Effects=1,window=""){
 	VarSetCapacity(LOGFONT,60),StrPut(style.font,&logfont+28,32,"CP0"),LogPixels:=DllCall("GetDeviceCaps","uint",DllCall("GetDC","uint",0),"uint",90),Effects:=0x041+(Effects?0x100:0)
